@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JukeBox HW</title>
+    <link rel="stylesheet" href="styles.css">
+    <script
+      src="https://kit.fontawesome.com/08927b8ef8.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="vinyl">
+    <img class="picture vinyl-1" id="picture" src="https://pngimg.com/uploads/vinyl/vinyl_PNG14.png">
+    <img class="picture vinyl-1" id="picture" src="https://www.freepnglogos.com/uploads/radio-png/file-circle-icons-radio-svg-wikimedia-commons-0.png">
+    <img class="picture vinyl-1" id="picture" src="https://i.pinimg.com/originals/5b/0b/b8/5b0bb866938082abdaa2842321710b15.png">
+    <img class="picture vinyl-1" id="picture" src="https://www.freepnglogos.com/uploads/radio-png/file-circle-icons-radio-svg-wikimedia-commons-0.png">
+    <img class="picture vinyl-1" id="picture" src="https://pngimg.com/uploads/vinyl/vinyl_PNG14.png">
+    </div>
+    <audio id="player" ontimeupdate="updateProgress()">
+      <source id="source" />
+      Audio not supported
+    </audio>
+    <div id="curr">
+    <span id="currentlyPlayingSong"></span><em><span id="currentSong"></span></em>
+    <progress id="progress" value='0' max='100'></progress>
+  </div>
+    <div id="controls">
+      <i class="far fa-play-circle fa-6x" onclick="playAudio()"></i>
+      <i class="far fa-pause-circle fa-6x" onclick="pauseAudio()"></i>
+      <p>Volume:</p>
+      <i class="fas fa-volume-down"></i>
+      <input type="range" id="volumeSlider" min="0" max="1" step="0.01" />
+      <i class="fas fa-volume-up"></i>
+    </div>
+    <h4>My Songs:</h4>
+    <div id="songList"></div>
+    <script src="script.js"></script>
+  </body>
+</html>

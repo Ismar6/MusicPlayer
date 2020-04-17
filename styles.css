@@ -1,0 +1,58 @@
+body {
+  background: radial-gradient(#3dffba, #ff9966);
+  font-size: 1.2em;
+  width: 50%;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+  min-height: 50vh;
+}
+
+#songList {
+  background: lightblue;
+  border-radius: 10px;
+  box-shadow: 10px 10px 5px grey;
+  border-style: groove;
+  text-align: left;
+  color: rgb(90, 78, 78);
+}
+
+li {
+  padding: 10px;
+}
+li:hover,
+svg:hover {
+  cursor: pointer;
+}
+
+#controls {
+  border: 1px lightblue;
+  border-radius: 10px;
+  background-color: #ff9966;
+  padding: 1.6em;
+  box-shadow: 10px 10px 5px grey;
+}
+
+#progress{
+  width: 90%;
+  margin: 15px;
+  background-color:#ff9966 ;
+}
+
+#currentlyPlayingSong, #currentSong {
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+#picture{
+  width: 20%;
+}
+
+#vinyl{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#curr{
+  margin: 40px;
+}
